@@ -1,0 +1,9 @@
+% updated on 190314.
+runT1_calib_v3
+runT2_bead_allFOV_v3
+runT3_LargeScale_foci_allFOV_v4
+runT4_LargeScale_linkTraces
+runT5_LargeScale_refineTraces_largeScaleTracing
+runT6_LargeScale_HiC_wholeTADs
+runT7_tformLamina
+runMT8_analyzeTracesInCellGroups_nucleolar_lamina_expression

@@ -1,0 +1,8 @@
+% updated on 190314.
+
+runT2_bead_allFOV_v3
+runT3_SmallScale_foci_allFOV_v4
+runT4_SmallScale_linkTraces
+runT5_SmallScale_refineTraces_fineScaleTracing
+runT6_SmallScale_HiC_wholeTADs
+runMT8_analyzeTracesInCellGroups_SmallScale
