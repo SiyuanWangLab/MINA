@@ -17,7 +17,7 @@ WGAChannel = 2; % channel index in the composite z stack
 %%
 StartPxl = (ImageSize-StepSize)/2+1; %(1536-1394)/2+1=72
 EndPxl = ImageSize-StartPxl+1; % ImageSize-71;
-TotalImage = zeros(StepSize*XSteps, StepSize*YSteps);
+TotalImage = zeros(StepSize*YSteps, StepSize*XSteps);
 X = 1-StepSize;
 Y = 1;
 
