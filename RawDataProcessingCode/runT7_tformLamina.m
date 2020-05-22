@@ -20,8 +20,8 @@ Hyb0IsBit1 = 0; % change this to 1 if hyb0 is bit1.
 NuclearBeadPath = 'sequential/STORM2_0_'; % set the path of the bead images in the nuclear imaging round
 
 %%
-if exist('ShiftListDNA.mat')==2
-    load('ShiftListDNA.mat');
+if exist('ShiftList.mat')==2
+    load('ShiftList.mat');
 else
     ShiftList = zeros(NumHybs,2);
 end
