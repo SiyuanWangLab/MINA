@@ -22,8 +22,8 @@ MaxNumBeadsToFit = 40;
 Hyb0IsBit1 = 0; % change this to 1 if hyb0 is bit1.
 
 %%
-if exist('ShiftListDNA.mat')==2
-    load('ShiftListDNA.mat');
+if exist('ShiftList.mat')==2
+    load('ShiftList.mat');
 else
     ShiftList = zeros(NumHybs,2);
 end
@@ -101,18 +101,14 @@ for jj = 0:NFOV-1
         if Hyb0IsBit1 == 0
             if ii<10
                 FileName = ['sequential/STORM2_0' num2str(ii) '_' FOVid];
-            elseif ii < 21
-                FileName = ['sequential/STORM2_' num2str(ii) '_' FOVid];
-            else % hyb21-hyb40 images are stored in sequential_2.
+            else 
                 FileName = ['sequential/STORM2_' num2str(ii) '_' FOVid];
             end
         elseif Hyb0IsBit1 == 1
             if ii-1<10
                 FileName = ['sequential/STORM2_0' num2str(ii-1) '_' FOVid];
-            elseif ii-1 < 21
-                FileName = ['sequential/STORM2_' num2str(ii-1) '_' FOVid];
             else
-                FileName = ['sequential/STORM2_' num2str(ii) '_' FOVid];
+                FileName = ['sequential/STORM2_' num2str(ii-1) '_' FOVid];
             end
         end        
         [ImageStack, InfoFile] = ReadZStack_MultiChannel(FileName,NumImage,FramesToWait,TotalNumChannels,3); % updated on 190717
