@@ -43,8 +43,8 @@ DomainStartsAndEnds = 'DomainStartsAndEnds19.txt';
 load('ChosenDomains19.mat');
 DomainsToExclude = []; % list the domains to exclude, e.g. DomainsToExclude = [15, 2];
 ChrName = 'chr19';
-MaxNumMissedTAD = 8; % maximum number of missed TADs in polarization analysis
-NormalizeTowardsMean = 1; % 1 means using the running average method to calcualte the expected distance between genomic loci
+MaxNumMissedTAD = TotalNumTADs; % maximum number of missed TADs in polarization analysis
+NormalizeTowardsMean = 0; % 1 means using the running average method to calcualte the expected distance between genomic loci
 AdaptiveThresholdingSensitivity = 0.5;
 NuclearImagePath = 'sequential/Laser405_0_'; % set the path of the nuclear images
 
