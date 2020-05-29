@@ -572,7 +572,7 @@ for ii = 1:max(CellTypeID_new)
             LaminaRatioError(i) = NaN;
         end
     end
-    % save the NucleolarRatio of this cell type in an array.
+    % save the LaminaRatio of this cell type in an array.
     AllLaminaRatio{ii} = LaminaRatio;
     AllLaminaRatioError{ii} = LaminaRatioError;
     
