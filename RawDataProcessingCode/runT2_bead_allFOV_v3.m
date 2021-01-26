@@ -31,6 +31,9 @@ end
 % mkdir('beadfigs')
 mkdir('TracingDriftParams')
 for jj = 0:NFOV-1    
+    Xdrift = [];
+    Ydrift = [];
+    Zdrift = [];
     if NFOV<=10
         FOVid = num2str(jj);
     elseif NFOV>10 && NFOV<=100
